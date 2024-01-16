@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-4 py-2 h-9 text-center inline-flex items-center mr-2;
+  }
+  .grad_purple {
+    @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 justify-center;
+  }
+  .grad_green {
+    @apply text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl justify-center;
+  }
+  .dropdown {
+    @apply w-48 fixed right-10 flex flex-col justify-end top-20 bg-gray-800 p-3 rounded-lg;
+  }
+  .dropdown_link {
+    @apply mt-2;
+  }
+  .custom_input {
+    @apply block p-2.5 w-full text-sm text-gray-300 rounded-lg  bg-gray-700;
+  }
+
+  .btn_oauth {
+    @apply w-full max-w-xs mt-5 font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center
+    transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm;
+  }
+  .login_input {
+    @apply w-full px-8 py-4 rounded-lg font-medium bg-gray-950 border border-gray-600 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 mt-5;
+  }
+  .btn_signup {
+    @apply mt-5 tracking-wide font-semibold bg-gradient-to-br from-purple-600 to-blue-600 hover:bg-gradient-to-bl text-gray-100 w-full py-3  focus:outline-none rounded-lg;
+  }
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* react quill text editor customizations start */
+.ql-snow.ql-toolbar {
+  background-color: #020617;
+  border: none !important;
+  border-radius: 20px;
+  max-width: max-content;
+}
+.ql-container.ql-snow {
+  background-color: #111827;
+  border: none !important;
+  font-size: 18px !important;
+  margin-top: 1rem;
+  font-family: monospace;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: #4b5563;
+  font-style: normal;
+}
+
+/* react quill text editor customizations start end */
